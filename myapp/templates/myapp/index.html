@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>datascience</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://images.unsplash.com/photo-1485746587195-5d6d85ddcb33?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.form-control, label {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Roboto,Arial,sans-serif;
+    
+}
+.form-control2, label {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    61114440531
+  </div><br><br><br><br>
+  <div class = "w3-large w3-center" w3-center>
+    <!-- <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">35 days left</p> -->
+    <form role="form" action=" " method="POST"><br>
+        {% csrf_token %}
+        <div >
+          <div>
+            <input name="data" placeholder="enter text here" class="form-control" size="100">
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+          </div><br><br>
+          <div>
+            <button type="submit" name="submit" 
+              value="submit" class="form-control2">submit</button>
+          </div>
+          <div ><br>
+            
+           
+            <p id = 0> Classification : {{ result }}</p>
+            <p id = 1> Accuracy : {{Accuracy}} %</p>
+          
+            
+          </div>
+        </div>
+      </form>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+  <div >
+    <p>motorcycles</p>
+    <p>
+        Hands on the driver's shoulders are a definite no-no.  It feels
+        good for the passenger to stretch her arms, and a shoulder massage feels
+        good too, but the shoulders are connected to the arms, and the arms to
+        the handlebars...  Should you hit the brakes, the pressure on the shoulders
+        can make steering interesting.</p>
+  </div>
+  <div >
+<p>baseball</p>
+<p>A little while ago I decided to look up some things on how talk about baseball 
+    emerged on the Internet, starting in the ‘80s with Usenet and moving into AOL, 
+    Prodigy, Compuserve, etc., and then the first year or so after Mosaic and 
+    Netscape started the browser-based web experience and the term “information
+     superhighway” started to be obsolete. Here, from Google Groups Usenet archives, 
+     is the announcement of apparently the first-ever Strat-O-Matic baseball 
+     simulation played online, on September 29, 1984 (you’ll have to pardon the bad 
+     line breaks in the list of members):</p>
+  </div>
+  <div >
+    <p>electronics</p>
+    <p>Not everybody around the world describes electronics in the same way: 
+        the convention used on this page is strongly inspired by the European 
+        habits and it may differ from what you're used to. For example, the voltage 
+        is symbolized by the letter U, the current by the letter I, resistors are 
+        drawn with a rectangular symbol, the current flows from the positive terminal
+         to the negative terminal and the voltage is represented by an arrow pointing 
+         from the positive to the negative potential, in the same sense as the electric field.</p>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
